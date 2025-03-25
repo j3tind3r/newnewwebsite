@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥🔥🔥 TAWQIR MEME OVERLOAD 🔥🔥🔥</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Comic Sans MS, cursive, sans-serif;
+            background: url('Screenshot 2024-12-05 100559.jpg') repeat;
+            background-size: cover;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 100px;
+            color: white;
+            text-transform: uppercase;
+            text-shadow: 10px 10px 0px black, -10px -10px 0px red, 10px -10px 0px blue, -10px 10px 0px yellow;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-5deg);
+            animation: shake 0.3s infinite alternate;
+        }
+        @keyframes shake {
+            from { transform: translate(-50%, -50%) rotate(-5deg) scale(1); }
+            to { transform: translate(-50%, -50%) rotate(5deg) scale(1.1); }
+        }
+        .meme {
+            position: absolute;
+            transform: rotate(var(--angle, 0deg)) scale(var(--scale, 1));
+            left: var(--left, 50%);
+            top: var(--top, 50%);
+            width: var(--width, 300px);
+            opacity: var(--opacity, 1);
+        }
+    </style>
+</head>
+<body>
+    <h1>🔥🔥🔥 TAWQIR MEME OVERLOAD 🔥🔥🔥</h1>
+
+    <script>
+        function randomRange(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        for (let i = 0; i < 50; i++) {  // INCREASED MEME COUNT TO 50 FOR MAXIMUM CHAOS
+            let img = document.createElement("img");
+            img.src = "Screenshot 2024-12-05 100559.jpg";
+            img.alt = "Meme";
+            img.className = "meme";
+            img.style.setProperty("--angle", randomRange(-180, 180) + "deg");
+            img.style.setProperty("--scale", randomRange(0.3, 2));
+            img.style.setProperty("--left", randomRange(0, 90) + "vw");
+            img.style.setProperty("--top", randomRange(0, 90) + "vh");
+            img.style.setProperty("--width", randomRange(100, 500) + "px");
+            img.style.setProperty("--opacity", randomRange(0.5, 1));
+            document.body.appendChild(img);
+
+        }
+        
+    </script>
+    <h1>🔥🔥🔥 TAWQIR MEME OVERLOAD 🔥🔥🔥</h1>
+
+</body>
+</html>
